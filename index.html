@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Web Accessibility Setting -->
+    <meta name="viewport" 
+     content="width=device-width, initial-scale=1.0" 
+     user-scalable="yes"
+     minimum-scale="5"
+     maximum-scale="5"
+    >
+    <!-- Web Accessibility Setting End -->
+
+    <title>카페 다모아</title>    
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icons/fabicon.ico" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- slider  -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    
+    <!-- slider end -->
+    <!-- scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- scroll end -->
+    <title>카페 다모아</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <div class="abs_header">
+        <a href="./index.html">
+            <img src="./images/icons/main_banner.png" alt="">
+        </a>
+        <div class="sub_inner">
+            <div class="login">
+                <a href="./Subpage/login.html">로그인</a>
+            </div>
+            <div class="coffee">
+                <a href="./Subpage/cafe.html">카페</a>
+            </div>
+            <div class="store">
+                <a href="./Subpage/near_cafe.html">주변 카페</a>
+            </div>
+            <div class="responsibility">
+                <a href="./Subpage/news.html">뉴스</a>
+            </div>
+            <div class="search">
+                <a href="./Subpage/news.html">검색</a>
+            </div>
+        </div>
+            
+        <!-- header End -->
+    </div>
+    
+    <!-- slider -->
+
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+                  <a href="https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=1973">
+                      <img src="./images/event/sb_event.svg" alt="">
+                  </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://mo.twosome.co.kr/ev/eventDtl.do?annoSeqNo=112&eventDiv=progress&searchOpt=recent">
+                <img src="./images/event/ts_event.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="https://blog.naver.com/ekddusekddus/222687660453">
+                  <img src="./images/event/mega_event.svg" alt="">
+              </a>
+         </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="./images/event/ediya_event.svg" alt="">
+              </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <!-- slider end -->
+    <!-- scroll -->
+    <div class="introduce">
+        
+        <div data-aos="fade-down" data-aos-duration="1000" class="intro_img1">
+            <img src="./images/icons/main_icon1.png" alt="">
+        </div>
+        <div class="box1" data-aos="fade-right">
+
+        </div>
+        <div class="box2" data-aos="fade-right">
+
+        </div>
+        <div class="box3" data-aos="fade-left">
+
+        </div>
+        <div class="box4" data-aos="fade-left">
+
+        </div>
+     </div>
+     <!-- scroll end -->
+    <div class="cafe_box">
+        <a href="./Subpage/cafe.html">
+            <div class="sb">
+                <img src="./images/cafe_box/sb/sb_text.png" alt="" class="sb_text">
+                <img src="./images/cafe_box/sb/logo.png" alt="">
+            </div>
+        </a>
+        <a href="#">
+            <div class="twosome">
+                <img src="./images/cafe_box/ts/twosome.png" alt="">
+                <img src="./images/cafe_box/ts/twosome_text.png" alt="" class="twosome_text">
+            </div>
+        </a>
+        <a href="#">
+            <div class="ediya">
+                <img src="./images/cafe_box/ediya/ediya.png" alt="">
+                <img src="./images/cafe_box/ediya/ediya_text.png" alt="" class="ediya_text">
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="mega">
+                <img src="./images/cafe_box/mega/mega.jpg" alt="">
+            </div>
+        </a>
+    </div>
+
+    <div class="footer">
+        footer
+    </div>
+    <!-- slider js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scroll js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // slider
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          
+        //   autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        // slider end
+        // hover
+        $('.sb').hover(()=>{
+            $(".sb_text").css('opacity', '1')
+        },()=>{
+            $(".sb_text").css('opacity', '0.5555')
+        })
+        $('.twosome').hover(()=>{
+            $(".twosome_text").css('opacity', '1')
+        },()=>{
+            $(".twosome_text").css('opacity', '0.5555')
+        })
+        $('.ediya').hover(()=>{
+            $(".ediya_text").css('opacity', '1')
+        },()=>{
+            $(".ediya_text").css('opacity', '0.5555')
+        })
+        // scroll
+        AOS.init();
+      </script>
+</body>
+</html>
